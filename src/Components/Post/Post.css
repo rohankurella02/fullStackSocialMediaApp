@@ -1,0 +1,137 @@
+.post {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    margin: 20px 0;
+    /* background-color: #424F55; */
+    background-color: #252d30;
+    border-radius: 20px;
+    /* padding: 10px 20px; */
+}
+
+.postWrapper {
+    padding: 10px;
+    padding: 20px 20px;
+    
+}
+
+.postTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.postTopLeft {
+    display: flex;
+    align-items: center;
+}
+
+.postProfileImg {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.postTopRight {
+    color: #b3b3b3;
+}
+
+.postUsername {
+    font-size: 17px;
+    font-weight: 600;
+    color: whitesmoke;
+    margin: 10px;
+}
+
+.postDate {
+    font-size: 12px;
+    color: #b3b3b3;
+}
+
+.postText {
+    color: whitesmoke;
+    font-size: 16px;
+    font-weight: 430;
+}
+
+.postCenter {
+    margin: 20px 0;
+}
+
+.postImg {
+    margin-top: 20px;
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    border-radius: 15px;
+    border: 1px solid #b3b3b3;
+}
+
+.postBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.postBottomLeft {
+    display: flex;
+    align-items: center;
+}
+
+.postLikeIcon {
+    font-size: 20px;
+    margin-right: 5px;
+    /* color: #b3b3b3; */
+    color: rgb(89, 147, 222);
+    filter: drop-shadow(3px 4px 4px rgba(89, 147, 222, 0.388));
+    background-color: whitesmoke;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.button {
+
+    cursor: pointer;
+}
+
+.deleteContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 10px; */
+    background-color: #59758C;
+    border-radius: 20px;
+    color: white;
+    padding: 15px;
+}
+
+.postLoveIcon {
+    font-size: 20px;
+    margin-right: 5px;
+    color: #f41c76;
+    /* text-shadow: 0 0 30px #f41c76; */
+    filter: drop-shadow(3px 4px 4px #f41c7670);
+    background-color: whitesmoke;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.postLikeCounter {
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 10px;
+    color: #b3b3b3;
+    margin-left: 15px;
+}
+
+.postCommentText {
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 10px;
+    color: #b3b3b3;
+}

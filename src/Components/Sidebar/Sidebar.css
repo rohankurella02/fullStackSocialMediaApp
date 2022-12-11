@@ -1,0 +1,216 @@
+.sidebar {
+    flex: 3;
+    height: calc(100vh - 50px);
+    /* overflow-y: scroll; */
+    position: sticky;
+    top: 50px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+     background-color: transparent;
+}
+
+.sidebarWrapper {
+    padding: 20px;
+    font-size: 20px;
+}
+
+.sidebarProfile {
+    /* list-style: none; */
+    padding: 0!important;
+    margin: 0;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #252d30;
+    /* background-color: #424F55; */
+    color: #f1f1f1;
+}
+
+.sidebarListItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sidebarIcon {
+    margin-right: 15px;
+
+}
+
+.sidebarButton {
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 400;
+}
+
+.sidebarHr {
+    margin: 20px 0;
+}
+
+.sidebarFriendList {
+    /* padding: 0;
+    margin: 0; */
+    list-style: none;
+    overflow-y: scroll;
+    /* background-color: #424F55; */
+    background-color: #252d30;
+    height: 30vh;
+    border-radius: 20px;
+    position: relative;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    color: #85A3B9;
+}
+
+::-webkit-scrollbar-track {
+    background-color: none;
+}
+
+::-webkit-scrollbar-thumb {
+     color: rgb(179,179,179);
+}
+
+
+
+.folllowerList {
+    overflow-y: scroll;
+}
+
+.sidebarFriend {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.sidebarFriendImg {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.sidebarProfileCover {
+    /* background-position: center */
+    /* background-size: contain; */
+    position: relative;
+}
+
+.sidebarProfileCoverImg {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.sidebarProfileInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 85px;
+}
+
+.sidebarProfileInfoName {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+.sidebarProfileInfoDesc {
+    color: #85A3B9;
+    font-size: 14px;
+    margin-top: 0;
+}
+
+.sidebarProfileUserImg {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 50px;
+    border: 3px solid white;
+}
+
+.desc {
+    color: whitesmoke;
+    font-size: 14px;
+    margin-top: 0;
+    text-align: center;
+    padding: 20px;
+    font-weight: 300;
+}
+
+.sidebarFollowers {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.following, .followers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.followingCount, .followersCount {
+    font-size: 23px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.followingText, .followersText {
+    font-size: 14px;
+    font-weight: 400;
+    color: #85A3B9;
+}
+
+.profileLink {
+    text-align: center;
+    padding: 20px;
+    font-weight: 500;
+    color: rgb(122, 164, 248);
+    font-size: 14px;
+}
+
+.followersListTitle {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 0;
+    color: whitesmoke;
+    /* background-color: #424F55; */
+    background-color: #252d30;
+    position: sticky;
+    top: 0;
+}
+
+.followerName {
+    font-size: 17px;
+    font-weight: 500;
+    color: whitesmoke;
+}
+
+.followerHandle {
+    font-size: 14px;
+    font-weight: 400;
+    color: #85A3B9;
+}
