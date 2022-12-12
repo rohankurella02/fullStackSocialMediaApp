@@ -5,6 +5,7 @@ import { useForm } from 'react-hook-form';
 import { useSelector, useDispatch } from 'react-redux'
 import { userLogin } from '../../slices/userSlice';
 import { useNavigate } from 'react-router-dom';
+import toast, {Toaster} from 'react-hot-toast';
 
 function Login() {
 
@@ -32,6 +33,7 @@ function Login() {
       setData(data)
       console.log(data);
       dispatch(userLogin(data))
+      // toast.success("Login Successful");
     }
 
   return (

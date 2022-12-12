@@ -1,17 +1,27 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
+import toast, {Toaster} from 'react-hot-toast';
 
 //making an API call
 export const userLogin = createAsyncThunk("getUsers", async (user, thunkApi) => {
     let response = await axios.post("/api/user/login", user)
+    // toast.promise(response, {
+    //     loading: 'Loading',
+    //     success: 'Login Successful',
+    //     error: 'Login Failed',
+    // });
+
     let userData = response.data;
     console.log(userData.message)
     if (userData.message === "Login Successful") {
         // localStorage.setItem("token", userData.payload);
+        toast.success("Login Successful");
         return userData.userObj;
     }
     if (userData.message === "User Not Found" || userData.message === "Incorrect Password") {
-        alert(userData.message);
+        // alert(userData.message);
+        toast.error(userData.message);
+
         return thunkApi.rejectWithValue(userData)
     }
 })

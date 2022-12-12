@@ -8,6 +8,7 @@ import myPhoto from '../../Assets/myPhoto.png'
 import { useSelector } from 'react-redux'
 import axios from 'axios';
 import { useEffect } from 'react';
+import toast from 'react-hot-toast';
 
 function Post({d}) {
 
@@ -27,7 +28,14 @@ function Post({d}) {
 
     const handleDelete = (id) => {
         const deletePost = axios.delete(`/api/post/delete/${id}`)
-        .then(res => alert(res.data.message)).catch(err => console.log(err))
+        // .then(res => alert(res.data.message)).catch(err => console.log(err))
+        toast.promise(deletePost, {
+            loading: 'Loading',
+            success: 'Post Deleted Successfully',
+            error: 'Something went wrong , Please try later',
+        });
+
+
     }
 
   return (

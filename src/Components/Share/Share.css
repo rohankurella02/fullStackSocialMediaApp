@@ -101,7 +101,7 @@
     padding: 0 20px;
 }
 
-.shareIcon {
+.Icon {
     font-size: 20px;
     margin-right: 5px;
 }
@@ -119,6 +119,7 @@
     color: rgb(248, 246, 246);
     box-shadow: 0 0 30px #34b736;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .file-input__input {

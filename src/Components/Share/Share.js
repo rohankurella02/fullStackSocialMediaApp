@@ -12,6 +12,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useSelector } from 'react-redux'
 import axios from 'axios';
 import { useEffect } from 'react';
+import toast, {Toast} from 'react-hot-toast';
 
 
 function Share() {
@@ -42,7 +43,13 @@ function Share() {
         setPost(newPost);
         console.log(post);
         const createPost = axios.post('/api/post/create', newPost)
-        .then(res => alert(res.data.message)).catch(err => console.log(err))
+        // .then(res => toast.success(res.data.message)).catch(err => {toast.error("Something went wrong , Please try later"); console.log(err)})
+        toast.promise(createPost, {
+            loading: 'Loading',
+            success: 'Post created successfully',
+            error: 'Something went wrong , Please try later',
+        });
+
     }
 
   return (
